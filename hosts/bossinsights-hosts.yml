@@ -48,19 +48,24 @@ hosts:
   - docs-index
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
   - Documentation
   serves:
   - docs
+  - cdn
+  vendor: cloudfront
   registrable_domain: bossinsights.com
   role: docs
   relation: own
 - host: trust.bossinsights.com
   found_by:
   - pointer
+  - well-known
   types:
   - Compliance
   serves: []
+  platform: app.safebase.io
   registrable_domain: bossinsights.com
   role: other
   relation: own
