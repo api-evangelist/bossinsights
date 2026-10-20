@@ -1,0 +1,18 @@
+generated: '2026-10-19'
+method: none
+source:
+- https://zapier.com/apps/bossinsights/integrations
+- https://zapier.com/apps/boss-insights/integrations
+- https://n8n.io/integrations/bossinsights/
+- https://composio.dev/toolkits/bossinsights
+- https://monid.ai/tools/bossinsights
+checked:
+- https://composio.dev/toolkits/bossinsights
+- https://monid.ai/tools/bossinsights
+- https://n8n.io/integrations/bossinsights/
+- https://zapier.com/apps/boss-insights/integrations
+- https://zapier.com/apps/bossinsights/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

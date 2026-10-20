@@ -1,0 +1,12 @@
+generated: '2026-10-19'
+method: searched
+probe: true
+source: https://trust.bossinsights.com/
+url: https://trust.bossinsights.com/
+certifications:
+- SOC 2
+evidence:
+- source: https://trust.bossinsights.com/
+  keywords:
+  - soc 2
+  - trust center

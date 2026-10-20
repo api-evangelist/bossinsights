@@ -1,23 +1,91 @@
 aid: bossinsights
+
 name: Boss Insights
-description: 'Boss Insights is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Boss Insights provides advanced business intelligence solutions that help companies unlock actionable insights from their data. Their
+  platform aggregates, analyzes, and visualizes key performance metrics, enabling decision makers to track growth, optimize operations, and identify
+  market trends. With a focus on user-friendly dashboards, customizable reporting, and seamless integration with existing data sources, Boss Insights
+  empowers organizations to make data-driven strategies and improve overall performance.
+
 url: https://raw.githubusercontent.com/api-evangelist/bossinsights/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-19'
+
 modified: '2026-10-19'
+
 tags:
 - Company
-apis: []
+- Business-Intelligence
+- Data-Analytics
+- Dashboard
+- Reporting
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: WellKnown
+  url: well-known/bossinsights-well-known.yml
+- type: Vendors
+  url: vendors/bossinsights-vendors.yml
+- type: Compliance
+  url: https://trust.bossinsights.com/
+- type: Hosts
+  url: hosts/bossinsights-hosts.yml
+- type: Security
+  url: https://bossinsights.com/security/
+- type: Newsroom
+  url: https://bossinsights.com/news/51523/
+- type: Login
+  url: https://bossinsights.com/sign-in/
+- type: DeveloperPortal
+  url: https://bossinsights.com/developers/
+- type: Documentation
+  url: https://docs.bossinsights.com/
+- type: TrustCenter
+  url: security/bossinsights-trust-center.yml
+- type: DomainSecurity
+  url: security/bossinsights-domain-security.yml
 - type: Website
   url: https://bossinsights.com/
+
+apis:
+- name: Boss Insights API
+  description: API for Boss Insights platform (no public OpenAPI spec found)
+  humanURL: https://bossinsights.com/developers/
+  baseURL: null
+  properties: []
+  aid: bossinsights:boss-insights-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine-readable spec discovered on api.bossinsights.com or docs.bossinsights.com.
+  evidence:
+  - url: https://api.bossinsights.com/openapi.json
+    status: 0
+  - url: https://api.bossinsights.com/openapi.yaml
+    status: 0
+  - url: https://api.bossinsights.com/swagger.json
+    status: 0
+  - url: https://docs.bossinsights.com/openapi.json
+    status: 404
+  checked: '2026-10-19'
+x-enrichment:
+  date: '2026-10-19'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
